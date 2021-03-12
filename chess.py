@@ -11,19 +11,29 @@ class chess:
         self.chesscolor = color
         self.chesscolumn = column
         self.chessrow = row
-        self.chessstep =  step
+        self.chessstep = step
     def showinfo(self):
-        print (self.chessname)
-        print (self.chesscolor)
-        print (self.chesscolumn)
-        print (self.chessrow)
-        print (self.chessstep)
+        print (self.chessname,end="\t")
+        print (self.chesscolor,end="\t")
+        print (self.chesscolumn,end="\t")
+        print (self.chessrow,end="\t")
+        print (self.chessstep,end="\t")
 
-x = hero("Iana", "001", "0", "100", "35", "35")
-y = hero("kapkan", "002", "20", "100","28","40")
-z = hero("ash", "003", "0", "100","25","80")
-print(x.heroname, "\t", x.heroamrror, "\t", x.herohp, "\t", x.heroatk, "\t", x.heromovespeed)
-print(y.heroname, "\t", y.heroamrror, "\t", y.herohp, "\t", y.heroatk, "\t", y.heromovespeed)
-print(z.heroname, "\t", z.heroamrror, "\t", z.herohp, "\t", z.heroatk, "\t", z.heromovespeed)
+a = chess("將", "黑", "7", "13", "2")
+b = chess("帥", "紅", "7", "1", "1")
+c = chess("卒", "黑", "7", "6", "1")
+d = chess("兵", "紅", "7", "5", "1")
 
-showinfo
+
+#print(a.chessname, "\t", a.chesscolor, "\t", a.chesscolumn, "\t", a.chessrow, "\t", a.chessstep)
+#print(b.chessname, "\t", b.chesscolor, "\t", b.chesscolumn, "\t", b.chessrow, "\t", b.chessstep)
+#print(c.chessname, "\t", c.chesscolor, "\t", c.chesscolumn, "\t", c.chessrow, "\t", c.chessstep)
+#print(d.chessname, "\t", d.chesscolor, "\t", d.chesscolumn, "\t", d.chessrow, "\t", d.chessstep)
+
+a.showinfo()
+print(end="\n")
+b.showinfo()
+print(end="\n")
+c.showinfo()
+print(end="\n")
+d.showinfo()

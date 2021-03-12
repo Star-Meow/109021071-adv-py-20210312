@@ -19,20 +19,21 @@ class hero:
         self.heroatk = atk
         self.heromovespeed =  movespeed
     def showinfo(self):
-        print (self.heroname)
-        print (self.heroamrror)
-        print (self.herohp)
-        print (self.heroatk)
-        print (self.heromovespeed)
+        print (self.heroname,end="\t")
+        print (self.heroamrror,end="\t")
+        print (self.herohp,end="\t")
+        print (self.heroatk,end="\t")
+        print (self.heromovespeed,end="\t")
+
 
 
 x = hero("Iana", "001", "一甲", "100", "35", "三速")
 y = hero("kapkan", "002", "二甲", "100","28","二速")
 z = hero("ash", "003", "一甲", "100","25","三速")
-print(x.heroname, "\t", x.heroamrror, "\t", x.herohp, "\t", x.heroatk, "\t", x.heromovespeed)
-print(y.heroname, "\t", y.heroamrror, "\t", y.herohp, "\t", y.heroatk, "\t", y.heromovespeed)
-print(z.heroname, "\t", z.heroamrror, "\t", z.herohp, "\t", z.heroatk, "\t", z.heromovespeed)
+
 
 x.showinfo()
+print(end="\n")
 y.showinfo()
+print(end="\n")
 z.showinfo()
