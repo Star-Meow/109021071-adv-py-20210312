@@ -1,11 +1,6 @@
 class hero:
     '''
     -------------------------
-    15~20 defind name id amrror hp atk movespeed
-    29~31 defind info
-    32~34 print info what
-
-
 
 
 
